@@ -1,0 +1,5 @@
+build/
+Snake.app/
+.DS_Store
+xcuserdata/
+Snake_Game.md

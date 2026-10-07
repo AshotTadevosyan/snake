@@ -1,0 +1,36 @@
+// !$*UTF8*$!
+{
+archiveVersion = 1;
+classes = {};
+objectVersion = 56;
+objects = {
+A00000000000000000000000 = {isa = PBXBuildFile; fileRef = B00000000000000000000000; };
+B00000000000000000000000 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+A00000000000000000000001 = {isa = PBXBuildFile; fileRef = B00000000000000000000001; };
+B00000000000000000000001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+A00000000000000000000002 = {isa = PBXBuildFile; fileRef = B00000000000000000000002; };
+B00000000000000000000002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+A00000000000000000000003 = {isa = PBXBuildFile; fileRef = B00000000000000000000003; };
+B00000000000000000000003 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+A00000000000000000000010 = {isa = PBXBuildFile; fileRef = B00000000000000000000010; };
+B00000000000000000000010 = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Snake.icns; sourceTree = "<group>"; };
+B00000000000000000000011 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+B00000000000000000000012 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+C00000000000000000000000 = {isa = PBXGroup; children = (C00000000000000000000001, C00000000000000000000002, C00000000000000000000003); sourceTree = "<group>"; };
+C00000000000000000000001 = {isa = PBXGroup; children = (B00000000000000000000000, B00000000000000000000001, B00000000000000000000002, B00000000000000000000003); path = Sources; sourceTree = "<group>"; };
+C00000000000000000000002 = {isa = PBXGroup; children = (B00000000000000000000010, B00000000000000000000011); path = Resources; sourceTree = "<group>"; };
+C00000000000000000000003 = {isa = PBXGroup; children = (B00000000000000000000012); name = Products; sourceTree = "<group>"; };
+D00000000000000000000000 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000000, A00000000000000000000001, A00000000000000000000002, A00000000000000000000003); runOnlyForDeploymentPostprocessing = 0; };
+D00000000000000000000001 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000010); runOnlyForDeploymentPostprocessing = 0; };
+D00000000000000000000002 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+E00000000000000000000000 = {isa = PBXNativeTarget; buildConfigurationList = F00000000000000000000001; buildPhases = (D00000000000000000000000, D00000000000000000000002, D00000000000000000000001); buildRules = (); dependencies = (); name = Snake; productName = Snake; productReference = B00000000000000000000012; productType = "com.apple.product-type.application"; };
+E00000000000000000000001 = {isa = PBXProject; attributes = {LastUpgradeCheck = 1600; }; buildConfigurationList = F00000000000000000000000; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = C00000000000000000000000; productRefGroup = C00000000000000000000003; projectDirPath = ""; projectRoot = ""; targets = (E00000000000000000000000); };
+F00000000000000000000000 = {isa = XCConfigurationList; buildConfigurations = (F00000000000000000000010, F00000000000000000000011); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+F00000000000000000000001 = {isa = XCConfigurationList; buildConfigurations = (F00000000000000000000012, F00000000000000000000013); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+F00000000000000000000010 = {isa = XCBuildConfiguration; buildSettings = {MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug; };
+F00000000000000000000011 = {isa = XCBuildConfiguration; buildSettings = {MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O";}; name = Release; };
+F00000000000000000000012 = {isa = XCBuildConfiguration; buildSettings = {MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; PRODUCT_BUNDLE_IDENTIFIER = com.local.snake; PRODUCT_NAME = "$(TARGET_NAME)"; INFOPLIST_FILE = Resources/Info.plist; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; COMBINE_HIDPI_IMAGES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug; };
+F00000000000000000000013 = {isa = XCBuildConfiguration; buildSettings = {MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; PRODUCT_BUNDLE_IDENTIFIER = com.local.snake; PRODUCT_NAME = "$(TARGET_NAME)"; INFOPLIST_FILE = Resources/Info.plist; CODE_SIGN_IDENTITY = "-"; CODE_SIGN_STYLE = Manual; COMBINE_HIDPI_IMAGES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O";}; name = Release; };
+};
+rootObject = E00000000000000000000001;
+}
